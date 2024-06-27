@@ -21,7 +21,7 @@ function Navbar() {
               <a href='/'>Module</a>
             </h1>
             <h1 className='font-medium text-lg text-white'>
-              <a href='/'>List</a>
+              <a href='/list'>List</a>
             </h1>
           </div>
           <div className='text-white'>
