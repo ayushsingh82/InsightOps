@@ -18,7 +18,7 @@ function Navbar() {
           </div>
           <div className='flex justify-center flex-1 space-x-8 text-center'>
             <h1 className='font-medium text-lg text-white'>
-              <a href='/'>Module</a>
+              <a href='/module'>Module</a>
             </h1>
             <h1 className='font-medium text-lg text-white'>
               <a href='/list'>List</a>

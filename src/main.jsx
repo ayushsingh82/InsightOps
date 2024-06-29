@@ -7,6 +7,7 @@ import { Route } from 'react-router-dom'
 import Home from './components/Home.jsx'
 import Navbar from './components/Navbar.jsx'
 import List from './components/List.jsx'
+import Module from './components/Module.jsx'
 
 import '@rainbow-me/rainbowkit/styles.css';
 
@@ -40,6 +41,7 @@ const router = createBrowserRouter(
     <Route>
     <Route path='/' element={<Home/>}/>
     <Route path='/list' element={<List/>}/>
+    <Route path='/module' element={<Module/>}/>
     </Route>
   )
 )
@@ -56,3 +58,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   </WagmiProvider>
   </React.StrictMode>,
 )
+
+
+
+// dune api key -   ddZZbqTrQABnH094HfYqqgzb6TW6KpaE
