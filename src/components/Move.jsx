@@ -1,4 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import { TypewriterEffectSmooth } from './ui/typewriter-effect';
+
+const TypewriterEffectSmoothDemo = () => {
+  const words = [
+    { text: " Track" },
+    { text: " data with" },
+    { text: "MovementLabs", className: "text-purple-500 dark:text-purple-500" }
+  ];
+  return (
+    <div className="flex flex-col items-center justify-center h-[5rem] mt-[40px]">
+      <TypewriterEffectSmooth words={words} />
+      <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4"></div>
+    </div>
+  );
+};
 
 const Move = () => {
   const [address, setAddress] = useState('');
@@ -48,7 +63,7 @@ const Move = () => {
 
   return (
     <div className="min-h-screen bg-black text-white flex flex-col items-center">
-      <h1 className="text-3xl font-bold mb-6 py-10">Move</h1>
+      <h1 className="text-3xl font-bold mb-6 py-10"><TypewriterEffectSmoothDemo /></h1>
       <div className="flex flex-col items-center mb-6">
         <input
           type="text"
@@ -110,7 +125,7 @@ const Move = () => {
       </div>
       {error && <p className="text-red-500 mb-4">{error}</p>}
       {data && (
-        <div className="flex flex-col items-center bg-gray-800 p-6 rounded shadow-lg w-full max-w-2xl gradient-border mb-10">
+        <div className="flex flex-col items-center bg-gray-800 p-6 rounded shadow-lg w-full max-w-5xl gradient-border mb-10 overflow-x-auto">
           <pre className="whitespace-pre-wrap break-words text-white">{JSON.stringify(data, null, 2)}</pre>
         </div>
       )}

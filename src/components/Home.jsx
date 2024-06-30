@@ -37,16 +37,16 @@ export function VortexDemo() {
 const TypewriterEffectSmoothDemo = () => {
     const words = [
         {
-            text: "Run",
+            text: "Track",
         },
         {
-            text: "Nodes",
+            text: "AVS",
         },
         {
-            text: "with",
+            text: "Operator Node data with",
         },
         {
-            text: "Puffer.",
+            text: "InsightOps.",
             className: "text-purple-500 dark:text-purple-500",
         },
     ];
