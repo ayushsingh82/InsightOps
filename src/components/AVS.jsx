@@ -88,12 +88,12 @@ const AVS = () => {
           placeholder="Enter AVS contract address"
           value={avsAddress}
           onChange={handleInputChange}
-          className="p-2 mt-[-20px] rounded bg-white border-4 border-blue-600 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-2 focus:ring-blue-500 "
+     className="rounded-none relative block w-[350px] h-[50px] px-3 py-2 border placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm border-blue-500 border-4"
         />
         <button
           onClick={handleFetchData}
-          className="px-4 py-2 text-xl bg-black mt-[10px] gradient-border rounded border border-white text-purple-500 font-medium">
-          Fetch Data
+          className="px-6 py-3 text-xl w-[350px]  bg-black gradient-border rounded border border-white text-purple-500 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500 mt-[20px]">
+          Fetch AVS Data
         </button>
       </div>
       {error && <p className="text-red-500 mb-4">{error}</p>}
