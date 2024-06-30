@@ -1,6 +1,20 @@
 import React from 'react';
 import data from './data.json';
 
+const TypewriterEffectSmoothDemo = () => {
+  const words = [
+    { text: " All" },
+    { text: "Puffer", className: "text-purple-500 dark:text-purple-500" },
+    { text: " data available" },
+  ];
+  return (
+    <div className="flex flex-col items-center justify-center h-[5rem] mt-[40px]">
+      <TypewriterEffectSmooth words={words} />
+      <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4"></div>
+    </div>
+  );
+};
+
 
 const List = () => {
   return (
