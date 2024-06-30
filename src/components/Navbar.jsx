@@ -23,6 +23,9 @@ function Navbar() {
             <h1 className='font-medium text-lg text-white'>
               <a href='/list'>List</a>
             </h1>
+            <h1 className='font-medium text-lg text-white'>
+            <a href='/module1'>Module1</a>
+          </h1>
           </div>
           <div className='text-white'>
            <ConnectButton/>

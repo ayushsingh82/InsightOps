@@ -8,6 +8,7 @@ import Home from './components/Home.jsx'
 import Navbar from './components/Navbar.jsx'
 import List from './components/List.jsx'
 import Module from './components/Module.jsx'
+import Module1 from './components/Module1.jsx'
 
 import '@rainbow-me/rainbowkit/styles.css';
 
@@ -42,6 +43,7 @@ const router = createBrowserRouter(
     <Route path='/' element={<Home/>}/>
     <Route path='/list' element={<List/>}/>
     <Route path='/module' element={<Module/>}/>
+    <Route path='/module1' element={<Module1/>}/>
     </Route>
   )
 )
