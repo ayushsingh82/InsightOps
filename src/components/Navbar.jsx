@@ -24,6 +24,9 @@ function Navbar() {
               <a href='/operator'>Operator</a>
             </h1>
             <h1 className='font-medium text-lg text-white'>
+            <a href='/operator2'>Operator2</a>
+          </h1>
+            <h1 className='font-medium text-lg text-white'>
             <a href='/avs'>AVS</a>
           </h1>
           <h1 className='font-medium text-lg text-white'>

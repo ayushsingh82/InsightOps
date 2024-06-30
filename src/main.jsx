@@ -10,6 +10,7 @@ import List from './components/List.jsx'
 import Operator from './components/Operator.jsx'
 import AVS from './components/AVS.jsx'
 import AVS1 from './components/AVS1.jsx'
+import Operator2 from './components/Operator2.jsx'
 
 import '@rainbow-me/rainbowkit/styles.css';
 
@@ -44,6 +45,7 @@ const router = createBrowserRouter(
     <Route path='/' element={<Home/>}/>
     <Route path='/list' element={<List/>}/>
     <Route path='/operator' element={<Operator/>}/>
+    <Route path='/operator2' element={<Operator2/>}/>
     <Route path='/avs' element={<AVS/>}/>
     <Route path='/avs1' element={<AVS1/>}/>
     </Route>
