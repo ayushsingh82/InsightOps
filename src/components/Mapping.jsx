@@ -1,5 +1,32 @@
 import React, { useState } from 'react';
 
+
+import { TypewriterEffectSmooth } from './ui/typewriter-effect';
+
+const TypewriterEffectSmoothDemo = () => {
+  const words = [
+      {
+          text: " Enter",
+      },
+     
+      {
+          text: "AVS or Operator",
+          className: "text-purple-500 dark:text-purple-500",
+      },
+      {
+        text: " address",
+    },
+
+  ];
+  return (
+      <div className="flex flex-col items-center justify-center h-[5rem] mt-[40px]">
+          <TypewriterEffectSmooth words={words} />
+          <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
+          </div>
+      </div>
+  );
+}
+
 function Mapping() {
   const [address, setAddress] = useState('');
   const [data, setData] = useState(null);
@@ -42,7 +69,9 @@ function Mapping() {
 
   return (
     <div className="min-h-screen bg-black text-white flex flex-col items-center">
-      <h1 className="text-2xl font-bold mb-6 py-[30px]">Enter Operator or AVS Address</h1>
+      <h1 className="text-2xl font-bold mb-6 py-[30px]">
+      <TypewriterEffectSmoothDemo/>
+      </h1>
       <div className="flex flex-col items-center mb-8">
         <div className="mb-6">
           <input

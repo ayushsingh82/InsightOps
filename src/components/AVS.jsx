@@ -2,6 +2,32 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Doughnut } from 'react-chartjs-2';
 import Chart from 'chart.js/auto';
 
+import { TypewriterEffectSmooth } from './ui/typewriter-effect';
+
+const TypewriterEffectSmoothDemo = () => {
+  const words = [
+      {
+          text: " Enter",
+      },
+     
+      {
+          text: "AVS",
+          className: "text-purple-500 dark:text-purple-500",
+      },
+      {
+        text: " address",
+    },
+
+  ];
+  return (
+      <div className="flex flex-col items-center justify-center h-[5rem] mt-[40px]">
+          <TypewriterEffectSmooth words={words} />
+          <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
+          </div>
+      </div>
+  );
+}
+
 const AVS = () => {
   const [avsAddress, setAvsAddress] = useState('');
   const [avsData, setAvsData] = useState(null);
@@ -82,7 +108,9 @@ const AVS = () => {
   return (
     <div className="min-h-screen bg-black text-white flex flex-col items-center">
     <div className="flex justify-between items-center">
-    <h1 className="text-2xl font-bold mb-6 py-[30px]">Enter AVS Address</h1>
+    <h1 className="text-2xl font-bold mb-6 py-[30px]">
+    <TypewriterEffectSmoothDemo/>
+    </h1>
     <button className="absolute top-[120px] right-[30px] border border-2 border-white text-xl text-purple-500 px-4 py-2 rounded-lg font-medium gradient-border">
       <a href="/avs1">AVS metadata</a>
     </button>

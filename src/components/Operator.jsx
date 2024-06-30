@@ -1,6 +1,33 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Doughnut } from 'react-chartjs-2';
 
+
+import { TypewriterEffectSmooth } from './ui/typewriter-effect';
+
+const TypewriterEffectSmoothDemo = () => {
+  const words = [
+      {
+          text: " Enter",
+      },
+     
+      {
+          text: "Operator",
+          className: "text-purple-500 dark:text-purple-500",
+      },
+      {
+        text: " address",
+    },
+
+  ];
+  return (
+      <div className="flex flex-col items-center justify-center h-[5rem] mt-[40px]">
+          <TypewriterEffectSmooth words={words} />
+          <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
+          </div>
+      </div>
+  );
+}
+
 function Operator() {
   const [operatorAddress, setOperatorAddress] = useState('');
   const [operatorData, setOperatorData] = useState(null);
@@ -81,7 +108,7 @@ function Operator() {
   return (
     <div className="min-h-screen bg-black text-white flex flex-col items-center">
     <div className="flex justify-between items-center">
-    <h1 className="text-2xl font-bold mb-6 py-[30px]">Enter Operator Address</h1>
+    <h1 className="text-2xl font-bold mb-6 py-[30px]"><TypewriterEffectSmoothDemo/></h1>
     <button className="absolute top-[120px] right-[30px] border border-2 border-white text-xl text-purple-500 px-4 py-2 rounded-lg font-medium gradient-border">
       <a href="/operator2">Operator metadata</a>
     </button>
