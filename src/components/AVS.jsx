@@ -81,7 +81,12 @@ const AVS = () => {
 
   return (
     <div className="min-h-screen bg-black text-white flex flex-col items-center">
-      <h1 className="text-2xl font-bold mb-6 py-[30px]">Put AVS address to see</h1>
+    <div className="flex justify-between items-center">
+    <h1 className="text-2xl font-bold mb-6 py-[30px]">Enter AVS Address</h1>
+    <button className="absolute top-[120px] right-[30px] border border-2 border-white text-xl text-purple-500 px-4 py-2 rounded-lg font-medium gradient-border">
+      <a href="/avs1">AVS metadata</a>
+    </button>
+  </div>
       <div className="flex flex-col items-center mb-6">
         <input
           type="text"

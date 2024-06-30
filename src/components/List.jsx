@@ -11,7 +11,7 @@ const List = () => {
     </h1>
     <button className='absolute top-[20px] right-[20px] border border-2 border-white text-xl text-purple-500 px-[10px] py-[4px] rounded-lg
      font-medium gradient-border'>
-     <a href='/module'>  Click to get data</a>
+     <a href='/operator'>  Click to get data</a>
     </button>
   </div>
   

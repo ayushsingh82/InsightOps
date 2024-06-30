@@ -23,15 +23,11 @@ function Navbar() {
             <h1 className='font-medium text-lg text-white'>
               <a href='/operator'>Operator</a>
             </h1>
-            <h1 className='font-medium text-lg text-white'>
-            <a href='/operator2'>Operator2</a>
-          </h1>
+         
             <h1 className='font-medium text-lg text-white'>
             <a href='/avs'>AVS</a>
           </h1>
-          <h1 className='font-medium text-lg text-white'>
-          <a href='/avs1'>AVS1</a>
-        </h1>
+
           </div>
           <div className='text-white'>
            <ConnectButton/>
