@@ -1,5 +1,6 @@
 import React from 'react';
 import data from './data.json';
+import { TypewriterEffectSmooth } from './ui/typewriter-effect';
 
 const TypewriterEffectSmoothDemo = () => {
   const words = [
@@ -21,7 +22,7 @@ const List = () => {
     <div className='bg-black min-h-screen'>
     <div className='relative'>
     <h1 className='text-center text-xl font-bold text-white py-[20px]'>
-      Get Stats of Restaking Operator by Address
+     <TypewriterEffectSmoothDemo/>
     </h1>
     <button className='absolute top-[20px] right-[20px] border border-2 border-white text-xl text-purple-500 px-[10px] py-[4px] rounded-lg
      font-medium gradient-border'>
