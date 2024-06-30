@@ -40,10 +40,10 @@ const TypewriterEffectSmoothDemo = () => {
             text: "Track",
         },
         {
-            text: "AVS",
+            text: "AVS ,",
         },
         {
-            text: "Operator Node data with",
+            text: "Operator, Node data with",
         },
         {
             text: "InsightOps.",
