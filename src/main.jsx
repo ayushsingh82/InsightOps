@@ -12,6 +12,7 @@ import AVS from './components/AVS.jsx'
 import AVS1 from './components/AVS1.jsx'
 import Operator2 from './components/Operator2.jsx'
 import Mapping from './components/Mapping.jsx'
+import Move from './components/Move.jsx'
 
 import '@rainbow-me/rainbowkit/styles.css';
 
@@ -50,6 +51,7 @@ const router = createBrowserRouter(
     <Route path='/avs' element={<AVS/>}/>
     <Route path='/avs1' element={<AVS1/>}/>
     <Route path='/map' element={<Mapping/>}/>
+    <Route path='/move' element={<Move/>}/>
     </Route>
   )
 )
