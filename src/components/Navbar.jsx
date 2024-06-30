@@ -17,15 +17,18 @@ function Navbar() {
             <a href='/'>Puffer</a>
           </div>
           <div className='flex justify-center flex-1 space-x-8 text-center'>
+          <h1 className='font-medium text-lg text-white'>
+          <a href='/list'>List</a>
+        </h1>
             <h1 className='font-medium text-lg text-white'>
-              <a href='/module'>Module</a>
+              <a href='/operator'>Operator</a>
             </h1>
             <h1 className='font-medium text-lg text-white'>
-              <a href='/list'>List</a>
-            </h1>
-            <h1 className='font-medium text-lg text-white'>
-            <a href='/module1'>Module1</a>
+            <a href='/avs'>AVS</a>
           </h1>
+          <h1 className='font-medium text-lg text-white'>
+          <a href='/avs1'>AVS1</a>
+        </h1>
           </div>
           <div className='text-white'>
            <ConnectButton/>

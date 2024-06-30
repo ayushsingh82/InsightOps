@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Doughnut } from 'react-chartjs-2';
-import Chart from 'chart.js/auto';
 
-function Module() {
+function Operator() {
   const [operatorAddress, setOperatorAddress] = useState('');
   const [operatorData, setOperatorData] = useState(null);
   const [error, setError] = useState('');
@@ -81,29 +80,30 @@ function Module() {
 
   return (
     <div className="min-h-screen bg-black text-white flex flex-col items-center">
-      <h1 className="text-2xl font-bold mb-6 py-[30px]">Put address to see</h1>
-      <div className="flex flex-col items-center mb-6">
+      <h1 className="text-2xl font-bold mb-6 py-[30px]">Enter Operator Address</h1>
+      <div className="flex flex-col items-center mb-6 space-y-4">
         <input
           type="text"
           placeholder="Enter operator contract address"
           value={operatorAddress}
           onChange={handleInputChange}
-          className="p-2 mt-[-20px] rounded bg-gray-800 border border-black text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+     className="rounded-none relative block w-[350px] h-[50px] px-3 py-2 border placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm border-blue-500 border-4"
         />
         <button
           onClick={handleFetchData}
-          className="px-4 py-2 text-xl bg-black mt-[10px] gradient-border rounded border border-white text-purple-500 font-medium">
-          Fetch Data
+          className="px-6 py-3 text-xl w-[350px]  bg-black gradient-border rounded border border-white text-purple-500 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"
+        >
+          Fetch Operator Data
         </button>
       </div>
       {error && <p className="text-red-500 mb-4">{error}</p>}
       {operatorData && (
-        <div className="flex flex-col md:flex-row items-center bg-gray-800 p-6 rounded shadow-lg w-full max-w-2xl gradient-border mb-[50px] ">
+        <div className="flex flex-col md:flex-row items-center bg-gray-800 p-6 rounded shadow-lg w-full max-w-3xl gradient-border mb-8">
           <div className="w-full md:w-1/2">
-            <h2 className="text-2xl font-semibold mb-4 text-purple-500"> Operator Data</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-purple-500">Operator Data</h2>
             <pre className="whitespace-pre-wrap break-words">{JSON.stringify(operatorData, null, 2)}</pre>
           </div>
-          <div className="w-full md:w-1/2 ml-[30px]">
+          <div className="w-full md:w-1/2 mt-4 md:mt-0 ml-0 md:ml-8">
             <h2 className="text-2xl font-semibold mb-4 text-purple-500">TVL Distribution</h2>
             <Doughnut ref={chartRef} data={getChartData()} />
           </div>
@@ -113,4 +113,4 @@ function Module() {
   );
 }
 
-export default Module;
+export default Operator;

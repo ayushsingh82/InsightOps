@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Doughnut } from 'react-chartjs-2';
 import Chart from 'chart.js/auto';
 
-const Module1 = () => {
+const AVS = () => {
   const [avsAddress, setAvsAddress] = useState('');
   const [avsData, setAvsData] = useState(null);
   const [error, setError] = useState('');
@@ -12,14 +12,14 @@ const Module1 = () => {
     const options = {
       method: 'GET',
       headers: {
-       'X-DUNE-API-KEY': 'ddZZbqTrQABnH094HfYqqgzb6TW6KpaE'
+        'X-DUNE-API-KEY': '<x-dune-api-key>'
       }
     };
 
     fetch('https://api.dune.com/api/v1/eigenlayer/avs-stats', options)
       .then(response => response.json())
       .then(data => {
-        const result = data.find(row => row.avs_contract_address === address);
+        const result = data.result.rows.find(row => row.avs_contract_address === address);
         if (result) {
           setAvsData(result);
           setError('');
@@ -81,14 +81,14 @@ const Module1 = () => {
 
   return (
     <div className="min-h-screen bg-black text-white flex flex-col items-center">
-      <h1 className="text-2xl font-bold mb-6 py-[30px]">Put address to see</h1>
+      <h1 className="text-2xl font-bold mb-6 py-[30px]">Put AVS address to see</h1>
       <div className="flex flex-col items-center mb-6">
         <input
           type="text"
           placeholder="Enter AVS contract address"
           value={avsAddress}
           onChange={handleInputChange}
-          className="p-2 mt-[-20px] rounded bg-gray-800 border border-black text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+          className="p-2 mt-[-20px] rounded bg-white border-4 border-blue-600 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-2 focus:ring-blue-500 "
         />
         <button
           onClick={handleFetchData}
@@ -113,4 +113,4 @@ const Module1 = () => {
   );
 }
 
-export default Module1;
+export default AVS;

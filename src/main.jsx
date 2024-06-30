@@ -7,8 +7,9 @@ import { Route } from 'react-router-dom'
 import Home from './components/Home.jsx'
 import Navbar from './components/Navbar.jsx'
 import List from './components/List.jsx'
-import Module from './components/Module.jsx'
-import Module1 from './components/Module1.jsx'
+import Operator from './components/Operator.jsx'
+import AVS from './components/AVS.jsx'
+import AVS1 from './components/AVS1.jsx'
 
 import '@rainbow-me/rainbowkit/styles.css';
 
@@ -42,8 +43,9 @@ const router = createBrowserRouter(
     <Route>
     <Route path='/' element={<Home/>}/>
     <Route path='/list' element={<List/>}/>
-    <Route path='/module' element={<Module/>}/>
-    <Route path='/module1' element={<Module1/>}/>
+    <Route path='/operator' element={<Operator/>}/>
+    <Route path='/avs' element={<AVS/>}/>
+    <Route path='/avs1' element={<AVS1/>}/>
     </Route>
   )
 )
