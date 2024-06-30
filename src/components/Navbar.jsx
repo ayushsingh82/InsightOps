@@ -18,7 +18,7 @@ function Navbar() {
           </div>
           <div className='flex justify-center flex-1 space-x-8 text-center'>
           <h1 className='font-medium text-lg text-white'>
-          <a href='/list'>List</a>
+          <a href='/list'>Puffer</a>
         </h1>
             <h1 className='font-medium text-lg text-white'>
               <a href='/operator'>Operator</a>
@@ -29,11 +29,11 @@ function Navbar() {
           </h1>
 
           <h1 className='font-medium text-lg text-white'>
-            <a href='/map'>Map</a>
+            <a href='/map'>Connection</a>
           </h1>
 
           <h1 className='font-medium text-lg text-white'>
-            <a href='/move'>Move</a>
+            <a href='/move'>MoveLab</a>
           </h1>
 
           </div>
